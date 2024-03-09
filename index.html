@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+   
 </head>
+
 <body>
-    
+    <header>
+        <h1>Calculator - Pandu</h1>
+    </header>
+
+    <!-- DISPLAY FORM BMI -->
+    <main>
+        <div class="main-container">
+            <div class="container-item">
+                <h2>Form BMI</h2>
+                <p>Berat badan ideal adalah ....</p>
+                <section class="container-form">
+                    <div>
+                        <label>Jenis Kelamin</label> <br>
+                        <input type="radio" name="gender" id="gender-man">
+                        <label for="gender-man">
+                        Laki-laki
+                        </label>
+
+                        <input type="radio" name="gender" id="gender-woman">
+                        <label for="gender-woman">
+                        Perempuan
+                        </label>
+                    </div>
+                    <!-- lABEL-Berat badan -->
+                    <div class="re-fix"> 
+                        <label>Berat badan (Kg)</label>
+                        <input type="number" class="form-item">
+                    </div>
+                    <!-- Label- -->
+                    <div class="re-fix">
+                        <label>Usia (Tahun)</label>
+                        <input type="number" class="form-item">        
+                    </div>
+
+                    <div class="re-fix">
+                        <label>Tinggi badan (cm)</label>
+                        <input type="number" class="form-item">
+                    </div>
+                 
+
+                </section>
+                <div>
+                    <button type="button" id="calculate-button">Hitung BMI</button>
+                    <button type="button" id="btn-reset">Reset</button>
+                </div>
+            </div>
+          
+            <!-- DISPLAY FORM RESULT -->
+            <div class="container-item">
+                <h2>Result</h2>
+                <section class="container-result">
+                    <h4>Berat badan berlebih</h4>
+                    <h1>0</h1>
+                    <h4>Anda memiliki berat badan berlebihan</h4>
+                    <button type="button" id="btn-download">Download hasil</button>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

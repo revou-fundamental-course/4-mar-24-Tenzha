@@ -1,1 +1,77 @@
-/* Testeran */
+header>h1 {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+}
+
+.re-fix{
+    width: 45px;
+}
+
+.container-item
+ {
+    border: 1px solid;
+    width: 100%;
+    padding: 24px;
+}
+
+.form-item {
+    border: 0px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    height: 24px;
+}
+/* Button */
+
+
+button {
+    height: 32px;
+    padding-right:24px;
+    padding-left: 24px;
+    border: 0px;
+    background-color: aqua;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+#btn-download {
+    background-color: greenyellow;
+}
+
+#btn-reset {
+    background-color: crimson;
+}
+
+#calculate-button {
+    background-color: coral;
+    color: white;
+}
+
+.container-item>h2 {
+    text-align: center;
+}
+
+.container-result {
+    text-align: center;
+    background-color: gray;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.container-form {
+    text-align: left;
+    background-color: gray;
+    padding: 24px;
+}
+
+.container-form>div {
+    padding: 8px;
+}
