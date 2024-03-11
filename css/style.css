@@ -1,77 +1,186 @@
-header>h1 {
-    text-align: center;
+/* Default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
 
+/* Basic styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Styling for the header */
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom:2px solid #555;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideInDown 1s ease forwards;
+    -webkit-animation: slideInDown 1s ease forwards;
+}
+
+header p {
+    font-size: 10px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    animation: fadeIn 1s ease forwards;
+    -webkit-animation: fadeIn 1s ease forwards;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        -o-transform: translateY(-50px);
+        opacity: 0;
+}
+    to {
+        transform:translateY(0);
+        -webkit-transform:translateY(0);
+        -moz-transform:translateY(0);
+        -ms-transform:translateY(0);
+        -o-transform:translateY(0);
+        opacity: 1;
+}
+}
+
+@keyframes fadeIn {
+    from {
+        opacit: 0;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+
+/* Styling for the main container */
 .main-container {
     display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
 }
 
-.re-fix{
-    width: 45px;
+/* Styling for each container item */
+.container-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 45%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3 ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3 ease;
+    -ms-transition: transform 0.3s ease, box-shadow 0.3 ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3 ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container-item
- {
-    border: 1px solid;
-    width: 100%;
-    padding: 24px;
+/* Hover effect for container items */
+.container-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the form section */
+.container-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Styling for form labels and inputs */
+.re-fix {
+    margin-bottom: 20px;
 }
 
 .form-item {
-    border: 0px;
-    border-radius: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    -ms-border-radius: 9px;
-    -o-border-radius: 9px;
-    height: 24px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
 }
-/* Button */
 
+/* Styling for input focus */
+.form-item:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
 
+/* Styling for buttons */
 button {
-    height: 32px;
-    padding-right:24px;
-    padding-left: 24px;
-    border: 0px;
-    background-color: aqua;
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
+    background-color: #777;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, color 0,3 ease;
+    border-radius: 4px;
+    align-items: center;
+    -webkit-transition: background-color 0.3s ease, color 0,3 ease;
+    -moz-transition: background-color 0.3s ease, color 0,3 ease;
+    -ms-transition: background-color 0.3s ease, color 0,3 ease;
+    -o-transition: background-color 0.3s ease, color 0,3 ease;
 }
 
-#btn-download {
-    background-color: greenyellow;
+/* Hover effect for buttons */
+button:hover {
+    background-color: #555;
+    color: #fff;
 }
 
-#btn-reset {
-    background-color: crimson;
-}
-
-#calculate-button {
-    background-color: coral;
-    color: white;
-}
-
-.container-item>h2 {
-    text-align: center;
-}
-
+/* Styling for the result container */
 .container-result {
     text-align: center;
-    background-color: gray;
-    padding-top: 8px;
-    padding-bottom: 24px;
 }
 
-.container-form {
-    text-align: left;
-    background-color: gray;
-    padding: 24px;
+/* Styling for the result section */
+.container-result h2 {
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.container-form>div {
-    padding: 8px;
+/* Styling for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .container-item {
+        width: 100%;
+    }
 }

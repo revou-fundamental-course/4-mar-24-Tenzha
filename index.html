@@ -6,6 +6,8 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com
+    /ajax/libs/font-awesome/6.5.1/css/all.min.css">
    
 </head>
 
@@ -36,40 +38,46 @@
                     <!-- lABEL-Berat badan -->
                     <div class="re-fix"> 
                         <label>Berat badan (Kg)</label>
-                        <input type="number" class="form-item">
+                        <input type="number" id="weight" class="form-item">
                     </div>
                     <!-- Label- -->
                     <div class="re-fix">
                         <label>Usia (Tahun)</label>
-                        <input type="number" class="form-item">        
+                        <input type="number" id="age" class="form-item">        
                     </div>
 
                     <div class="re-fix">
                         <label>Tinggi badan (cm)</label>
-                        <input type="number" class="form-item">
+                        <input type="number" id= "height" class="form-item">
                     </div>
                  
 
                 </section>
+                <!-- Button -->
                 <div>
-                    <button type="button" id="calculate-button">Hitung BMI</button>
-                    <button type="button" id="btn-reset">Reset</button>
+                    <!-- Btn calculate -->
+                    <button type="button" id="calculate-button">
+                        <i class="fas fa-calculator"></i>Hitung BMI</button>
+                    
+                        <!-- Btn Reset -->
+                    <button type="button" id="btn-reset">
+                        <i class="fas fa-redo"></i>Reset</button>
                 </div>
             </div>
           
-            <!-- DISPLAY FORM RESULT -->
-            <div class="container-item">
-                <h2>Result</h2>
-                <section class="container-result">
-                    <h4>Berat badan berlebih</h4>
-                    <h1>0</h1>
-                    <h4>Anda memiliki berat badan berlebihan</h4>
-                    <button type="button" id="btn-download">Download hasil</button>
-                </section>
-            </div>
+          <!-- DISPLAY FORM RESULT -->
+           <div class="container-item">
+           <h2>Result</h2>
+           <section class="container-result">
+            <p id="bmi-result"> Your BMI Result!</p>
+            <button type="button" id="btn-download">Download hasil</button>
+    </section>
+</div>
         </div>
     </main>
-    <footer></footer>
-    <script src="js/script.js"></script>
+    <footer>
+       
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
